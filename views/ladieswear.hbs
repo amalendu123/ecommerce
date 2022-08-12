@@ -1,0 +1,59 @@
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="#" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:white">RITHU</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../" style="color:white;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../cartin" style="color:white">CART</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color:white" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CONTACT US
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" style="color:white;">INSTAGRAM</a>
+          <a class="dropdown-item" href="#" style="color:white">GMAIL</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" style="color:white">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <div class="container bg-dark" style="height:50px;padding-top:10px;margin-top:100px;">
+      <H3 style="color:white;"><center>LADIESWEAR</center></H3>
+    
+    </div>
+  
+ <section>
+    <div class="row">
+    {{#each product}}
+    
+    <div class="col-sm-6" style="margin-left:0 px;">
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{this._id}}.jpg" alt="Card image cap" style="height: 300px;width: 285px;">
+     <div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <p class="card-text">{{this.price}}</p>
+    <a href="/addtocart?id={{this._id}}&category=1" class="btn btn-primary">ADD TO CART</a>
+     </div>
+     </div>
+     </div>
+  
+{{/each}}
+</div>
+  </section>
+</body>

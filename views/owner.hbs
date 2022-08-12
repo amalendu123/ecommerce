@@ -1,0 +1,22 @@
+<div class="container bg-dark" style="height:50px;padding-top:10px;margin-bottom:20px">
+  <H3 style="color:white;"><center>WELCOME</center></H3>
+
+</div>
+<h1><center>ADD A ITEM</center></h1>
+<form method="post" action="/a"  enctype="multipart/form-data">
+<center>enter the item name:<input type="text" placeholder="enter the item name" name="item" style="margin-bottom:10px;"><br>
+enter the price:<input type="text" placeholder="enter the price" name="item" style="margin-bottom:10px;"><br>
+<select class="form-select"  name="category" aria-label="Default select example" style="margin-bottom:10px;">
+  <option selected>category</option>
+  <option value="1">LADIES WEAR</option>
+  <option value="2">KIDS(GIRLS) WEAR</option>
+  <option value="3">KIDS WEAR(BOYS)</option>
+  <option value="4">GENTS WEAR</option>
+  <option value="5">FASHION</option>
+  <option value="6">FOOTWEAR</option>
+</select><br>
+<label for="">image</label>
+<input type="file" class="form-control" name="myfile" style="margin-bottom:10px;">
+
+ <button type="submit" class="btn btn-primary btn-block mb-4">ADD</button></center>
+ </form>
